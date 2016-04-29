@@ -1,0 +1,35 @@
+// ------------------------------------------------
+// = Links
+// ------------------------------------------------
+
+a
+{
+    color: $color-brand;
+    text-decoration: none;
+
+    &,
+    & svg
+    {
+        transition: background .15s linear, border .15s linear, color .15s linear;
+    }
+
+    /* Remove blue overlay on Android devices */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
+    &:hover
+    {
+    }
+}
+
+.link-more
+{
+    &::after
+    {
+        content: '\00a0\2192';
+    }
+
+    &:hover
+    {
+        text-decoration: underline;
+    }
+}

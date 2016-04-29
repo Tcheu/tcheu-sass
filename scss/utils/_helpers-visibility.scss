@@ -1,0 +1,80 @@
+// -------------------------------------
+// =visibility helpers
+// -------------------------------------
+
+.hidden
+{
+    display: none !important;
+}
+
+/* Visible only for small screen */
+.hidden-small {
+	display: block;
+	@include mq(small) {
+		display: none;
+	}
+}
+/* Visible only for medium screen */
+.hidden-medium {
+	display: block;
+	@include mq(medium) {
+		display: none;
+	}
+}
+/* Hidden for large screens */
+.hidden-large {
+	display: block;
+    @include mq(large) {
+        display: none;
+    }
+}
+
+/* Visible for small screen and upper */
+.visible-small {
+	display: none;
+	@include mq(small) {
+		display: block;
+	}
+}
+/* Visible for medium screen and upper */
+.visible-medium {
+	display: none!important;
+	@include mq(medium) {
+		display: block;
+	}
+}
+/* Visible for large screen and upper */
+.visible-large {
+	display: none;
+	@include mq(large) {
+		display: block;
+	}
+}
+
+/* Collapsible elements */
+.collapsible {
+    transition: height .2s ease-in-out;
+}
+
+.collapsed {
+    height: 0 !important;
+}
+
+.collapsible--scale {
+	opacity: 1;
+	max-height: 100%;
+	transition: all 200ms ease;
+}
+.collapsed--scale {
+	max-height: 0;
+	opacity: 0;
+    position: relative;
+    z-index: -1;
+}
+
+/* VueJS cloak */
+
+[v-cloak]
+{
+    display: none;
+}

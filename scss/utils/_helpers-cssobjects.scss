@@ -1,0 +1,30 @@
+/**
+ * CSS Media Object
+ */
+
+.media
+{
+    overflow:  hidden;
+    width: 100%;
+
+    &,
+    & *
+    {
+        box-sizing: border-box;
+    }
+
+    &__img
+    {
+        float: left;
+    }
+
+    &__img img
+    {
+        display: block;
+    }
+
+    &__content
+    {
+        float: left;
+    }
+}

@@ -1,0 +1,241 @@
+// ------------------------------------------------
+// =base typography
+// ------------------------------------------------
+
+html
+{
+    font: normal 100%/1.4 $fontstack-main;
+    font-weight: 400;
+}
+
+body
+{
+}
+
+// ------------------------------------------------
+// =titles standards
+// ------------------------------------------------
+
+/**
+ * Title classes to be used throughout the layout
+ * scale roughly based on: http://www.modularscale.com/?16&px&1.125,62&web&text
+*/
+
+%title
+{
+    font-family: $fontstack-titles;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+
+    > a
+    {
+        color: inherit;
+        display: block;
+    }
+
+    > a:hover
+    {
+    }
+}
+
+.title-xx-large
+{
+    @extend %title;
+
+    display: block;
+    font-weight: 300;
+
+    margin-bottom: 1em;
+
+    @include rem-size(32px);
+
+    @include mq(medium) {
+        @include rem-size(36px);
+    }
+
+    @include mq(large) {
+        @include rem-size(42px);
+    }
+}
+
+.title-x-large
+{
+    @extend %title;
+
+    font-weight: 400;
+
+    @include rem-size(30px);
+
+    @include mq(medium) {
+        @include rem-size(32px);
+    }
+
+    @include mq(large) {
+        @include rem-size(34px);
+    }
+
+}
+
+.title-large
+{
+    @extend %title;
+
+    font-weight: 400;
+
+    @include rem-size(22px);
+
+    @include mq(medium) {
+        @include rem-size(28px);
+    }
+
+    @include mq(large) {
+        @include rem-size(26px);
+    }
+
+}
+
+.title-medium
+{
+    @extend %title;
+
+    font-weight: 600;
+
+    @include rem-size(18px);
+
+    @include mq(medium) {
+        @include rem-size(20px);
+    }
+
+    @include mq(large) {
+        @include rem-size(22px);
+    }
+
+}
+
+.title-small
+{
+    @extend %title;
+
+    font-weight: 400;
+
+    @include rem-size(16px);
+
+    @include mq(medium) {
+        @include rem-size(18px);
+    }
+
+    @include mq(large) {
+        @include rem-size(20px);
+    }
+}
+.title-x-small
+{
+    @extend %title;
+
+    font-weight: 400;
+
+    @include rem-size(14px);
+
+    @include mq(medium) {
+        @include rem-size(16px);
+    }
+
+    @include mq(large) {
+        @include rem-size(18px);
+    }
+}
+.title-xx-small
+{
+    @extend %title;
+
+    font-weight: 600;
+
+    @include rem-size(14px);
+
+    @include mq(medium) {
+        @include rem-size(14px);
+    }
+
+    @include mq(large) {
+        @include rem-size(16px);
+    }
+}
+
+// ------------------------------------------------
+// =title color variants
+// ------------------------------------------------
+
+
+// ------------------------------------------------
+// =wysiwyg titles
+// ------------------------------------------------
+
+.wysiwyg
+{
+    h2 { @extend .title-large; }
+    h3 { @extend .title-medium; }
+    h4 { @extend .title-small; }
+    em { @extend  .text-emphasis; }
+    strong { @extend  .text-highlight; }
+}
+
+
+// ------------------------------------------------
+// =paragraphs
+// ------------------------------------------------
+
+p
+{
+    margin-bottom: calc-rem(10px);
+}
+
+
+// ------------------------------------------------
+// =text size variants
+// ------------------------------------------------
+
+.text-lead
+{
+    @include rem-size(18px);
+
+    @include mq(medium)
+    {
+        @include rem-size(20px);
+    }
+}
+
+.text-small
+{
+  @include rem-size(14px);
+}
+
+.text-strong
+{
+    font-weight: 700;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-emphasis
+{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.text-highlight
+{
+    font-style: normal;
+    font-weight: 600;
+}
+
+.text-heading
+{
+	font-size: 1.2em;
+	letter-spacing: .1em;
+}

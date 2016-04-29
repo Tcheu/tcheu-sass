@@ -1,0 +1,150 @@
+// -------------------------------------
+// =margin helpers
+// -------------------------------------
+
+$margin--xxs: 0.25em;
+$margin--xs: 0.5em;
+$margin--s: 0.75em;
+
+$margin: 1em;
+
+$margin--l: 1.25em;
+$margin--xl: 1.5em;
+$margin--xxl: 2em;
+
+/**
+ * Components have their own margins and padding
+ * These classes should be used for overrides only
+*/
+
+.mt--xxl  { margin-top:    $margin--xxl !important; }
+.mr--xxl  { margin-right:  $margin--xxl !important; }
+.mb--xxl  { margin-bottom: $margin--xxl !important; }
+.ml--xxl  { margin-left:   $margin--xxl !important; }
+.mv--xxl  { margin-top:    $margin--xxl !important; margin-bottom: $margin--xxl !important; }
+.mh--xxl  { margin-left:   $margin--xxl !important; margin-right:  $margin--xxl !important; }
+
+.mt--xl   { margin-top:    $margin--xl !important; }
+.mr--xl   { margin-right:  $margin--xl !important; }
+.mb--xl   { margin-bottom: $margin--xl !important; }
+.ml--xl   { margin-left:   $margin--xl !important; }
+.mv--xl   { margin-top:    $margin--xl !important; margin-bottom: $margin--xl !important; }
+.mh--xl   { margin-left:   $margin--xl !important; margin-right:  $margin--xl !important; }
+
+.mt--l    { margin-top:    $margin--l !important; }
+.mr--l    { margin-right:  $margin--l !important; }
+.mb--l    { margin-bottom: $margin--l !important; }
+.ml--l    { margin-left:   $margin--l !important; }
+.mv--l    { margin-top:    $margin--l !important; margin-bottom: $margin--l !important; }
+.mh--l    { margin-left:   $margin--l !important; margin-right:  $margin--l !important; }
+
+.mt       { margin-top:    $margin !important; }
+.mr       { margin-right:  $margin !important; }
+.mb       { margin-bottom: $margin !important; }
+.ml       { margin-left:   $margin !important; }
+.mv       { margin-top:    $margin !important; margin-bottom: $margin !important; }
+.mh       { margin-left:   $margin !important; margin-right:  $margin !important; }
+
+.mt--s    { margin-top:    $margin--s !important; }
+.mr--s    { margin-right:  $margin--s !important; }
+.mb--s    { margin-bottom: $margin--s !important; }
+.ml--s    { margin-left:   $margin--s !important; }
+.mv--s    { margin-top:    $margin--s !important; margin-bottom: $margin--s !important; }
+.mh--s    { margin-left:   $margin--s !important; margin-right:  $margin--s !important; }
+
+.mt--xs   { margin-top:    $margin--xs !important; }
+.mr--xs   { margin-right:  $margin--xs !important; }
+.mb--xs   { margin-bottom: $margin--xs !important; }
+.ml--xs   { margin-left:   $margin--xs !important; }
+.mv--xs   { margin-top:    $margin--xs !important; margin-bottom: $margin--xs !important; }
+.mh--xs   { margin-left:   $margin--xs !important; margin-right:  $margin--xs !important; }
+
+.mt--xxs  { margin-top:    $margin--xxs !important; }
+.mr--xxs  { margin-right:  $margin--xxs !important; }
+.mb--xxs  { margin-bottom: $margin--xxs !important; }
+.ml--xxs  { margin-left:   $margin--xxs !important; }
+.mv--xxs  { margin-top:    $margin--xxs !important; margin-bottom: $margin--xxs !important; }
+.mh--xxs  { margin-left:   $margin--xxs !important; margin-right:  $margin--xxs !important; }
+
+.mt--none { margin-top:    0 !important; }
+.mr--none { margin-right:  0 !important; }
+.mb--none { margin-bottom: 0 !important; }
+.ml--none { margin-left:   0 !important; }
+.mv--none { margin-top:    0 !important; margin-bottom: 0 !important; }
+.mh--none { margin-left:   0 !important; margin-right:  0 !important; }
+
+
+// -------------------------------------
+// =padding helpers
+// -------------------------------------
+
+$padding--xxs: 0.25em;
+$padding--xs: 0.5em;
+$padding--s: 0.75em;
+
+$padding: 1em;
+
+$padding--l: 1.25em;
+$padding--xl: 1.5em;
+$padding--xxl: 2em;
+
+/**
+ * Components have their own paddings and padding
+ * These classes should be used for overrides only
+*/
+
+.pt--xxl  { padding-top:    $padding--xxl !important; }
+.pr--xxl  { padding-right:  $padding--xxl !important; }
+.pb--xxl  { padding-bottom: $padding--xxl !important; }
+.pl--xxl  { padding-left:   $padding--xxl !important; }
+.pv--xxl  { padding-top:    $padding--xxl !important; padding-bottom: $padding--xxl !important; }
+.ph--xxl  { padding-left:   $padding--xxl !important; padding-right:  $padding--xxl !important; }
+
+.pt--xl   { padding-top:    $padding--xl !important; }
+.pr--xl   { padding-right:  $padding--xl !important; }
+.pb--xl   { padding-bottom: $padding--xl !important; }
+.pl--xl   { padding-left:   $padding--xl !important; }
+.pv--xl   { padding-top:    $padding--xl !important; padding-bottom: $padding--xl !important; }
+.ph--xl   { padding-left:   $padding--xl !important; padding-right:  $padding--xl !important; }
+
+.pt--l    { padding-top:    $padding--l !important; }
+.pr--l    { padding-right:  $padding--l !important; }
+.pb--l    { padding-bottom: $padding--l !important; }
+.pl--l    { padding-left:   $padding--l !important; }
+.pv--l    { padding-top:    $padding--l !important; padding-bottom: $padding--l !important; }
+.ph--l    { padding-left:   $padding--l !important; padding-right:  $padding--l !important; }
+
+.pt       { padding-top:    $padding !important; }
+.pr       { padding-right:  $padding !important; }
+.pb       { padding-bottom: $padding !important; }
+.pl       { padding-left:   $padding !important; }
+.pv       { padding-top:    $padding !important; padding-bottom: $padding !important; }
+.ph       { padding-left:   $padding !important; padding-right:  $padding !important; }
+
+.pt--s    { padding-top:    $padding--s !important; }
+.pr--s    { padding-right:  $padding--s !important; }
+.pb--s    { padding-bottom: $padding--s !important; }
+.pl--s    { padding-left:   $padding--s !important; }
+.pv--s    { padding-top:    $padding--s !important; padding-bottom: $padding--s !important; }
+.ph--s    { padding-left:   $padding--s !important; padding-right:  $padding--s !important; }
+
+.pt--xs   { padding-top:    $padding--xs !important; }
+.pr--xs   { padding-right:  $padding--xs !important; }
+.pb--xs   { padding-bottom: $padding--xs !important; }
+.pl--xs   { padding-left:   $padding--xs !important; }
+.pv--xs   { padding-top:    $padding--xs !important; padding-bottom: $padding--xs !important; }
+.ph--xs   { padding-left:   $padding--xs !important; padding-right:  $padding--xs !important; }
+
+.pt--xxs  { padding-top:    $padding--xxs !important; }
+.pr--xxs  { padding-right:  $padding--xxs !important; }
+.pb--xxs  { padding-bottom: $padding--xxs !important; }
+.pl--xxs  { padding-left:   $padding--xxs !important; }
+.pv--xxs  { padding-top:    $padding--xxs !important; padding-bottom: $padding--xxs !important; }
+.ph--xxs  { padding-left:   $padding--xxs !important; padding-right:  $padding--xxs !important; }
+
+.pt--none { padding-top:    0 !important; }
+.pr--none { padding-right:  0 !important; }
+.pb--none { padding-bottom: 0 !important; }
+.pl--none { padding-left:   0 !important; }
+.pv--none { padding-top:    0 !important; padding-bottom: 0 !important; }
+.ph--none { padding-left:   0 !important; padding-right:  0 !important; }

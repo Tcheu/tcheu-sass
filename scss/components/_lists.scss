@@ -1,0 +1,94 @@
+// ------------------------------------------------
+// = Lists
+// ------------------------------------------------
+
+.list-bare
+{
+	list-style: none;
+	margin: 0 0 1em;
+	padding: 0;
+}
+
+/* =list-inline
+============================= */
+
+.list-inline
+{
+    @include list-inline();
+}
+
+/* =list-bullets
+============================= */
+
+.list-bullets
+{
+    @include list-bare();
+    color: $color-brand;
+
+    & > li
+    {
+    }
+
+    & > li::before
+    {
+        content: '•';
+        display: inline-block;
+        color: $color-brand;
+        padding-right: .5em;
+        vertical-align: middle;
+    }
+}
+
+/* =list-vspace
+============================= */
+
+.list-vspace
+{
+    @include list-bare();
+
+    & > li
+    {
+        margin-bottom: .5em;
+    }
+}
+.list-large-vspace
+{
+	@include list-bare();
+
+	& > li
+	{
+		margin-bottom: 1em;
+	}
+}
+
+/* =Wysiwyg list
+============================= */
+.wysiwyg ul, ol {
+    list-style: none;
+	margin-left: 1em;
+
+	li {
+		margin-bottom: .5em;
+		&:last-child {
+			padding-bottom:0;
+		}
+	}
+}
+
+.wysiwyg ul li:before
+{
+    content: '•';
+    padding-right: .5em;
+}
+
+.wysiwyg ol
+{
+    counter-reset: numberedlists;
+}
+
+.wysiwyg ol li:before
+{
+    content: counter(numberedlists) '.';
+    counter-increment: numberedlists;
+    padding-right: .5em;
+}

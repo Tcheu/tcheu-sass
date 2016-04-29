@@ -1,0 +1,40 @@
+// ------------------------------------------------
+// =alignment helpers
+// ------------------------------------------------
+
+.align-center
+{
+  text-align: center;
+}
+
+.align-left
+{
+  text-align: left;
+}
+
+.align-middle::before
+{
+    content: ' ';
+    display: inline-block;
+    height: 100%;
+    margin-right: -0.25em;
+    vertical-align: middle;
+}
+
+.align-right
+{
+  text-align: right;
+}
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+
+.clearfix:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}

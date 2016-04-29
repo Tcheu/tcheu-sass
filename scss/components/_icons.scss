@@ -1,0 +1,86 @@
+// ------------------------------------------------
+// = Icons
+// ------------------------------------------------
+
+.icon {
+	display: inline-block;
+    vertical-align: middle;
+
+	svg {
+        fill: currentColor;
+		width: 32px;
+		height: 32px;
+	}
+}
+
+.icon--brand
+{
+    color: $color-brand;
+
+    a:hover &
+    {
+    }
+}
+
+.icon--left img,
+.icon--left svg
+{
+	margin-right: 0.25em;
+}
+
+.icon--right img,
+.icon--right svg
+{
+	margin-left: 0.25em;
+}
+
+.icon--xx-large img,
+.icon--xx-large svg
+{
+	width: 128px;
+	height: 128px;
+}
+
+.icon--x-large img,
+.icon--x-large svg
+{
+	width: 64px;
+	height: 64px;
+}
+
+.icon--large img,
+.icon--large svg
+{
+	width: 48px;
+	height: 48px;
+}
+
+.icon--small img,
+.icon--small svg
+{
+	width: 24px;
+	height: 24px;
+}
+
+.icon--x-small img,
+.icon--x-small svg
+{
+	width: 22px;
+	height: 22px;
+}
+
+.icon--xx-small img,
+.icon--xx-small svg
+{
+	width: 16px;
+	height: 16px;
+}
+
+/**
+ * Color variants
+ */
+
+.icon--white
+{
+    color: $color-white;
+}

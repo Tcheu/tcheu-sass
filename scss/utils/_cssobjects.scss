@@ -1,0 +1,65 @@
+// ------------------------------------------------
+// =media object
+// ------------------------------------------------
+
+.media
+{
+
+    &,
+    .media__body
+    {
+        display: block;
+        overflow: hidden;
+    }
+
+    .media__img
+    {
+        float: left;
+        margin-right: 1em;
+    }
+
+    .media__img img,
+    .media__img svg
+    {
+        display: block;
+    }
+}
+
+// ------------------------------------------------
+// =flag object
+// ------------------------------------------------
+
+.flag
+{
+    display: table;
+    width: 100%;
+}
+
+.flag__img,
+.flag__body
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.flag__img
+{
+    padding-right: 1em;
+
+    > img
+    {
+        display: block;
+        max-width: none;
+    }
+}
+
+.flag__body
+{
+    width: 100%;
+
+    &,
+    > :last-child
+    {
+        margin-bottom: 0;
+    }
+}

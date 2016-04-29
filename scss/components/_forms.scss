@@ -1,0 +1,50 @@
+// ------------------------------------------------
+// = Forms
+// ------------------------------------------------
+
+/**
+ * Remove styles from the standard buttons
+ */
+button
+{
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+	outline: none;
+}
+
+.form
+{
+    &,
+    *
+    {
+        box-sizing: border-box;
+    }
+}
+
+/**
+ * Fieldsets
+ */
+
+.fieldset
+{
+    border: none;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    padding: 0;
+
+    + .fieldset
+    {
+        margin-top: calc-rem(40px);
+    }
+}

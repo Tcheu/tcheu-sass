@@ -1,0 +1,50 @@
+// ------------------------------------------------
+// = Buttons
+// ------------------------------------------------
+
+button
+{
+    /* Remove blue overlay on Android devices */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.btn {
+    box-sizing: border-box;
+	border: none;
+    border-radius: 2px;
+    display: inline-block;
+	vertical-align: middle;
+
+	outline: none;
+	text-decoration: none;
+
+    transition: all .15s linear;
+
+    padding-top: calc-rem(5px);
+    padding-bottom: calc-rem(5px);
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+/* Buttons variants */
+
+.btn--full
+{
+	display: block;
+	width: 100%;
+}
+
+.btn--large
+{
+    @include rem-size(20px);
+}
+
+.btn--tiny
+{
+    @include rem-size(12px);
+}
+
+.btn--small
+{
+	@include rem-size(14px);
+}

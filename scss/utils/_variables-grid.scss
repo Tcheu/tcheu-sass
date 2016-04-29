@@ -1,0 +1,35 @@
+// ------------------------------------------------
+// =grid configuration
+// ------------------------------------------------
+
+/**
+ * Override default grid configuration options
+*/
+
+$grid-gutter: 40px;
+
+$grid-pushclasses: true;
+$grid-pullclasses: true;
+
+$breakpoints-list: (
+    /* 500px and beyond */
+    "small": (
+        query: "all and (min-width: 31.25em)",
+        generate-grid-classes: true
+    ),
+    /* 760px and beyond */
+    "medium": (
+        query: "all and (min-width: 47.5em)",
+        generate-grid-classes: true
+    ),
+    /* 1024px and beyond */
+    "large": (
+        query: "all and (min-width: 64em)",
+        generate-grid-classes: true
+    ),
+    /* 1140px and beyond */
+    "xlarge": (
+        query: "all and (min-width: 71.25em)",
+        generate-grid-classes: false
+    )
+);

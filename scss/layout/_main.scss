@@ -1,0 +1,34 @@
+// ------------------------------------------------
+// =page
+// ------------------------------------------------
+
+/**
+ * Content module
+ * Used to manage vertical spacing
+ */
+
+.contentmodule
+{
+    padding-top: calc-rem(40px);
+    padding-bottom: calc-rem(40px);
+}
+
+/**
+ * Contentmodule variants
+ */
+
+
+/**
+ * Container
+ * Used to manage horizontal spacing
+ */
+
+.container
+{
+    max-width: 1140px;
+
+    margin: 0 auto;
+
+    padding-left: percentage(40/1220); // 40 + 1140 + 40
+    padding-right: percentage(40/1220); // 40 + 1140 + 40
+}
